@@ -34,6 +34,7 @@ public class Tables {
 
 		WebElement salary = driver.findElement(By.xpath("//table[@id='dtBasicExample']/thead/tr/th[6]"));
 		System.out.println(salary.getText());
+		
 		System.out.println("********************************************");
 		System.out.println("********************************************");
 

@@ -19,31 +19,30 @@ public class AlertHandling_Q2 {
 
 		driver.manage().window().maximize();
 
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
+		//Button1
 		WebElement button1 = driver.findElement(By.id("alertButton"));
-		
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", button1);
-		
 		button1.click();
-		
 		System.out.println("Button1 alert Box Text: " + driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 
+		//Button2
 		WebElement button2 = driver.findElement(By.id("timerAlertButton"));
 		button2.click();
-		
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.alertIsPresent());
-		
-		
 		System.out.println("Button2 alert Box Text: " + driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 
+		//Button3
 		WebElement button3 = driver.findElement(By.id("confirmButton"));
 		button3.click();
 		System.out.println("Button3 alert Box Text: " + driver.switchTo().alert().getText());
 		driver.switchTo().alert().accept();
 
+		//Button4
 		WebElement button4 = driver.findElement(By.id("promtButton"));
 		button4.click();
 		driver.switchTo().alert().sendKeys("Devika");

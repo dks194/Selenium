@@ -17,8 +17,9 @@ public class MultipleWindow {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriver driver = new ChromeDriver();
 
+		//url launch
 		driver.get("https://www.hyrtutorials.com/p/window-handles-practice.html");
-
+		//window maximize
 		driver.manage().window().maximize();
 
 		// parent handle
