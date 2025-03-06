@@ -1,4 +1,4 @@
-package assignments;
+	package assignments;
 
 import java.util.List;
 
@@ -59,6 +59,7 @@ public class AssignmentDropdown {
 
 		for (WebElement selectedOption : selectedOptionsIdeDropdown) {
 			System.out.println(selectedOption.getText());
+			
 		}
 
 		driver.close();

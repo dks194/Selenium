@@ -26,6 +26,8 @@ public class MultipleWindowHandle {
 		driver.switchTo().frame(frame1);
 
 		WebElement newBrowserTab = driver.findElement(By.cssSelector("div.farme_window a"));
+		////By.xpath("//div/p/a[contains(text(),'New Browser Tab')]")
+		//or text()='New Browser Tab'
 
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 

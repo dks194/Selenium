@@ -30,6 +30,7 @@ public class DragAndDrop {
 
 		WebElement dragDebitAmount = driver.findElement(By.id("fourth"));
 		WebElement dropDebitAmount = driver.findElement(By.id("amt7"));
+		
 
 		Actions actions1 = new Actions(driver);
 		actions1.dragAndDrop(dragDebitAmount, dropDebitAmount).perform();

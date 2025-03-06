@@ -49,6 +49,7 @@ public class assignment_2 {
 		System.out.println("Dropdown Admin Details : \n" + "text : " + dropdownAdmin.getText());
 		System.out.println("attribute : " + dropdownAdmin.getAttribute("href"));
 		System.out.println("tagname : " + dropdownAdmin.getTagName());
+		
 
 	}
 

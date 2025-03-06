@@ -27,6 +27,7 @@ public class AlertHandling_Q2 {
 		js.executeScript("arguments[0].scrollIntoView();", button1);
 		button1.click();
 		System.out.println("Button1 alert Box Text: " + driver.switchTo().alert().getText());
+		
 		driver.switchTo().alert().accept();
 
 		//Button2
